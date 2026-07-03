@@ -11,7 +11,7 @@ h4
     font-size: 20px;
 }
 .header {
-    height: 100vh;
+    height: 80vh;
     background-image: url('images/hero.jpg');
     background-size: cover;
     background-image: url('images/image17.jpg');
@@ -49,5 +49,6 @@ h4
     cursor: pointer;
 }
 .btn:hover {
-    background-color: #F5E9E2;
+    background-color: #2D1810;
+    text-align: center;  color: #F5E9E2;
     }

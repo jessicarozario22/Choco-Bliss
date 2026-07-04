@@ -30,7 +30,8 @@ h4
     font-size: 18px;
     margin: 4px 2px;
     cursor: pointer;
-    font-color: #F5E9E2;
+    height: 55px;
+    width: 176px;
 }
 .button:hover {
     background-color: #2D1810;
@@ -47,8 +48,42 @@ h4
     font-size: 18px;
     margin: 4px 2px;
     cursor: pointer;
+      height: 55px;
+    width: 176px;
 }
 .btn:hover {
     background-color: #2D1810;
     text-align: center;  color: #F5E9E2;
     }
+
+     nav {
+      background-color: #ffffff;
+      overflow: hidden;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav ul li {
+      flex: 1;
+    }
+    nav ul li a {
+      display: block;
+      color: #2D1810;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    nav ul li a:hover {
+      background-color: #575757;
+    }
+
+    .hero-section {
+  max-width: 500px;
+  margin: 60px auto;
+  background: #F5E9E2;
+  padding: 24px;
+  border-radius: 6px;
+}

@@ -1,89 +1,1264 @@
-h1{
-    color: #2D1810;
-    font-family: 'playfair display', serif;
-    font-size: 72px;
-}
-h4
-{
-    color: #2D1810;
-    font-family: 'playfair display', serif;
-    font-weight: 400;
-    font-size: 20px;
-}
-.header {
-    height: 80vh;
-    background-image: url('images/hero.jpg');
-    background-size: cover;
-    background-image: url('images/image17.jpg');
-    background-color: #F5E9E2;
-    padding: 20px;
-    text-align: left;
-}
-.button {
-    background-color: #4E342E;
-    border-radius: 12px;
-    border: 1px solid #2D1810;
-    padding: 10px 20px;
-    text-align: center;  color: #F5E9E2;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    margin: 4px 2px;
-    cursor: pointer;
-    height: 55px;
-    width: 176px;
-}
-.button:hover {
-    background-color: #2D1810;
+/*=====================================
+
+        GOOGLE FONT
+
+======================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
+
+
+/*=====================================
+
+        CSS RESET
+
+======================================*/
+
+*{
+
+    margin:0;
+    padding:0;
+
+    box-sizing:border-box;
 
 }
-.btn {
-     background-color: #F5E9E2;
-     border-radius: 12px;
-    border: 1px solid #2D1810;
-    padding: 10px 20px;
-    text-align: center; color: #2D1810;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    margin: 4px 2px;
-    cursor: pointer;
-      height: 55px;
-    width: 176px;
+
+/*
+margin:0;
+----------
+Browser-এর default margin remove করে।
+
+padding:0;
+-----------
+Default padding remove করে।
+
+box-sizing:border-box;
+-----------------------
+Padding & Border width-এর ভিতরে count হবে।
+Professional website-এ সবসময় ব্যবহার করা হয়।
+
+*/
+
+
+html{
+
+    scroll-behavior:smooth;
+
 }
-.btn:hover {
-    background-color: #2D1810;
-    text-align: center;  color: #F5E9E2;
-    }
 
-     nav {
-      background-color: #ffffff;
-      overflow: hidden;
-    }
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
-    nav ul li {
-      flex: 1;
-    }
-    nav ul li a {
-      display: block;
-      color: #2D1810;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-    nav ul li a:hover {
-      background-color: #575757;
-    }
+body{
 
-    .hero-section {
-  max-width: 500px;
-  margin: 60px auto;
-  background: #F5E9E2;
-  padding: 24px;
-  border-radius: 6px;
+    font-family:'Poppins',sans-serif;
+
+    background:#ffffff;
+
+    color:#2d2d2d;
+
+}
+/*=====================================
+
+        CONTAINER
+
+======================================*/
+
+.container{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+}
+
+/*
+
+90%
+----
+ছোট Screen-এ সুন্দর দেখাবে।
+
+1300px
+--------
+Desktop-এর Maximum Width।
+
+margin:auto
+------------
+Center এ নিয়ে আসে।
+
+*/
+/*=====================================
+
+        DEFAULT STYLE
+
+======================================*/
+
+a{
+
+    text-decoration:none;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+/*=====================================
+
+        HEADER
+
+======================================*/
+
+header{
+
+    width:100%;
+
+    background:#fff;
+
+    padding:20px 0;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    z-index:999;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+
+}
+
+/*
+
+position:fixed
+---------------
+Navbar সবসময় Top এ থাকবে।
+
+z-index
+--------
+সব Section-এর উপরে থাকবে।
+
+*/
+/*=====================================
+
+        NAVBAR
+
+======================================*/
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+/*
+
+display:flex
+-------------
+সব Element এক লাইনে।
+
+justify-content
+----------------
+Logo Left
+
+Menu Center
+
+Icons Right
+
+align-items
+-------------
+Vertical Center।
+
+*/
+/*=====================================
+
+        LOGO
+
+======================================*/
+
+.logo h2{
+
+    font-size:32px;
+
+    font-family:'Playfair Display',serif;
+
+    color:#5A2D1C;
+
+}
+/*=====================================
+
+        MENU
+
+======================================*/
+
+.menu{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+.menu a{
+
+    color:#333;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.menu a:hover{
+
+    color:#7b4329;
+
+}
+/*=====================================
+
+        ICONS
+
+======================================*/
+
+.nav-icons{
+
+    display:flex;
+
+    gap:18px;
+
+}
+
+.nav-icons i{
+
+    width:45px;
+
+    height:45px;
+
+    background:#F5F0EC;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.nav-icons i:hover{
+
+    background:#5A2D1C;
+
+    color:#fff;
+
+    transform:translateY(-5px);
+
+}
+/*=====================================
+
+        TABLET
+
+======================================*/
+
+@media(max-width:992px){
+
+.menu{
+
+display:none;
+
+}
+
+}
+/*=====================================
+
+        HERO SECTION
+
+======================================*/
+
+.hero{
+
+    position:relative;
+
+    background:#F8EFE8;
+
+    padding:170px 0 120px;
+
+    overflow:hidden;
+
+}
+
+/*
+
+padding-top = 170px
+
+কারণ Header Fixed.
+
+Header-এর নিচে Hero শুরু হবে।
+
+*/
+/*=====================================
+
+        HERO BACKGROUND
+
+======================================*/
+
+.hero-bg{
+
+    position:absolute;
+
+    width:700px;
+
+    height:700px;
+
+    background:#F2DED0;
+
+    border-radius:50%;
+
+    right:-220px;
+
+    top:-220px;
+
+}
+/*=====================================
+
+        HERO WRAPPER
+
+======================================*/
+
+.hero-wrapper{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:80px;
+
+}
+/*=====================================
+
+        HERO CONTENT
+
+======================================*/
+
+.hero-content{
+
+    flex:1;
+
+    z-index:10;
+
+}
+.hero-tag{
+
+    display:inline-block;
+
+    padding:12px 25px;
+
+    background:#ffffff;
+
+    border-radius:50px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    margin-bottom:30px;
+
+    font-size:14px;
+
+}
+.hero-content h1{
+
+    font-size:72px;
+
+    line-height:1.15;
+
+    font-family:'Playfair Display',serif;
+
+    margin-bottom:25px;
+
+    color:#3E2317;
+
+}
+
+.hero-content span{
+
+    color:#8B4D30;
+
+}
+.hero-content p{
+
+    max-width:520px;
+
+    font-size:18px;
+
+    line-height:32px;
+
+    color:#666;
+
+    margin-bottom:40px;
+
+}
+.hero-btn{
+
+    display:flex;
+
+    gap:20px;
+
+}
+.btn-primary{
+
+    padding:18px 38px;
+
+    background:#5B301D;
+
+    color:#fff;
+
+    border-radius:50px;
+
+    transition:.4s;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-5px);
+
+}
+.btn-secondary{
+
+    color:#5B301D;
+
+    font-weight:600;
+
+    padding:18px 0;
+
+}
+/*=====================================
+
+        HERO IMAGE
+
+======================================*/
+
+.hero-image{
+
+    flex:1;
+
+    position:relative;
+
+}
+.image-circle{
+
+    position:absolute;
+
+    width:520px;
+
+    height:520px;
+
+    background:#ffffff;
+
+    border-radius:50%;
+
+    top:40px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+
+}
+.hero-image img{
+
+    position:relative;
+
+    width:500px;
+
+    margin:auto;
+
+    z-index:10;
+
+    animation:float 5s ease infinite;
+
+}
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-18px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+/*=====================================
+
+        HERO RESPONSIVE
+
+======================================*/
+
+@media(max-width:992px){
+
+.hero-wrapper{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.hero-content p{
+
+margin:auto;
+
+margin-bottom:40px;
+
+}
+
+.hero-btn{
+
+justify-content:center;
+
+}
+
+.hero-content h1{
+
+font-size:52px;
+
+}
+
+.hero-image{
+
+margin-top:60px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero-content h1{
+
+font-size:40px;
+
+}
+
+.hero-btn{
+
+flex-direction:column;
+
+}
+
+.image-circle{
+
+width:320px;
+
+height:320px;
+
+}
+
+.hero-image img{
+
+width:300px;
+
+}
+
+}
+/*=====================================
+
+        FEATURED SECTION
+
+======================================*/
+
+.featured{
+
+    padding:100px 0;
+
+    background:#fff;
+
+}
+
+/*
+
+100px Padding
+
+উপরে ও নিচে পর্যাপ্ত Space দেয়।
+
+*/
+/*=====================================
+
+        SECTION HEADER
+
+======================================*/
+
+.section-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:end;
+
+    margin-bottom:60px;
+
+}
+
+.sub-title{
+
+    color:#8b5a2b;
+
+    font-size:15px;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+}
+
+.section-header h2{
+
+    font-size:48px;
+
+    margin-top:12px;
+
+    font-family:'Playfair Display',serif;
+
+    color:#3b2418;
+
+}
+.view-btn{
+
+    color:#5B301D;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.view-btn:hover{
+
+    transform:translateX(5px);
+
+}
+/*=====================================
+
+        GRID
+
+======================================*/
+
+.featured-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+/*
+
+repeat(4,1fr)
+
+মানে
+
+৪টা Equal Column
+
+*/
+.featured-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+.featured-card:hover{
+
+    transform:translateY(-12px);
+
+}
+.card-img{
+
+    overflow:hidden;
+
+}
+
+.card-img img{
+
+    transition:.5s;
+
+}
+
+.card-img:hover img{
+
+    transform:scale(1.1);
+
+}
+.card-content{
+
+    padding:25px;
+
+}
+
+.card-content h3{
+
+    margin-bottom:12px;
+
+    font-size:22px;
+
+}
+
+.card-content p{
+
+    color:#777;
+
+    line-height:28px;
+
+    margin-bottom:20px;
+
+}
+.price-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.price{
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    color:#5B301D;
+
+}
+.price-row button{
+
+    border:none;
+
+    background:#5B301D;
+
+    color:#fff;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.price-row button:hover{
+
+    background:#8b5a2b;
+
+}
+/*=====================================
+
+        FEATURED RESPONSIVE
+
+======================================*/
+
+@media(max-width:992px){
+
+.featured-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:576px){
+
+.section-header{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:20px;
+
+}
+
+.featured-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.section-header h2{
+
+font-size:34px;
+
+}
+
+}
+/*=====================================
+
+        BEST SELLER
+
+======================================*/
+
+.best-seller{
+
+padding:100px 0;
+
+background:#faf7f3;
+
+}
+
+.seller-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+}
+.seller-card{
+
+position:relative;
+
+background:#fff;
+
+border-radius:20px;
+
+overflow:hidden;
+
+padding:25px;
+
+transition:.4s;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+.seller-card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+.badge{
+
+position:absolute;
+
+top:20px;
+
+left:20px;
+
+background:#8B4513;
+
+color:#fff;
+
+padding:8px 18px;
+
+border-radius:30px;
+
+font-size:13px;
+
+}
+.wishlist{
+
+position:absolute;
+
+right:20px;
+
+top:20px;
+
+width:45px;
+
+height:45px;
+
+border:none;
+
+background:#fff;
+
+border-radius:50%;
+
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+.wishlist:hover{
+
+background:#8B4513;
+
+color:#fff;
+
+}
+.seller-image{
+
+margin-top:50px;
+
+overflow:hidden;
+
+}
+
+.seller-image img{
+
+transition:.5s;
+
+}
+
+.seller-card:hover img{
+
+transform:scale(1.08);
+
+}
+.seller-content{
+
+margin-top:25px;
+
+text-align:center;
+
+}
+
+.seller-content h3{
+
+font-size:22px;
+
+margin-bottom:10px;
+
+font-family:'Playfair Display',serif;
+
+}
+.rating{
+
+color:#f4b400;
+
+letter-spacing:3px;
+
+margin-bottom:18px;
+
+font-size:18px;
+
+}
+.price-box{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+margin-bottom:25px;
+
+}
+
+.old-price{
+
+text-decoration:line-through;
+
+color:#999;
+
+}
+
+.new-price{
+
+font-weight:bold;
+
+font-size:24px;
+
+color:#5B301D;
+
+}
+.cart-btn{
+
+width:100%;
+
+padding:15px;
+
+border:none;
+
+border-radius:50px;
+
+background:#5B301D;
+
+color:#fff;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+.cart-btn:hover{
+
+background:#8B4513;
+
+}
+/*=====================================
+
+        BEST SELLER RESPONSIVE
+
+======================================*/
+
+@media(max-width:992px){
+
+.seller-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:576px){
+
+.seller-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+/*=====================================
+
+        ABOUT SECTION
+
+======================================*/
+
+.about{
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+}
+/*=====================================
+
+        ABOUT WRAPPER
+
+======================================*/
+
+.about-wrapper{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:80px;
+
+}
+
+/*
+
+display:flex
+
+Left = Image
+
+Right = Content
+
+*/
+/*=====================================
+
+        ABOUT IMAGE
+
+======================================*/
+
+.about-image{
+
+    flex:1;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+/*=====================================
+
+        ABOUT CONTENT
+
+======================================*/
+
+.about-content{
+
+    flex:1;
+
+}
+
+.about-content h2{
+
+    font-size:48px;
+
+    line-height:1.3;
+
+    margin:20px 0;
+
+    font-family:'Playfair Display', serif;
+
+    color:#3b2418;
+
+}
+
+.about-content p{
+
+    color:#666;
+
+    line-height:32px;
+
+    margin-bottom:20px;
+
+}
+/*=====================================
+
+        STATISTICS
+
+======================================*/
+
+.about-stats{
+
+    display:flex;
+
+    gap:25px;
+
+    margin:40px 0;
+
+}
+
+.stat{
+
+    background:#faf7f3;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    flex:1;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.stat:hover{
+
+    transform:translateY(-8px);
+
+    background:#f2e5db;
+
+}
+
+.stat h3{
+
+    font-size:30px;
+
+    color:#5B301D;
+
+    margin-bottom:8px;
+
+}
+
+.stat span{
+
+    font-size:14px;
+
+    color:#666;
+
+}
+.about .btn-primary{
+
+    display:inline-block;
+
+    margin-top:10px;
+
+}
+/*=====================================
+
+        ABOUT RESPONSIVE
+
+======================================*/
+
+@media(max-width:992px){
+
+.about-wrapper{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.about-stats{
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.about-content h2{
+
+font-size:34px;
+
+}
+
+.about-stats{
+
+flex-direction:column;
+
+}
+
 }

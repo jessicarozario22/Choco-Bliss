@@ -1,51 +1,588 @@
 <!DOCTYPE html>
+<!-- HTML5 Document -->
+
 <html lang="en">
+
 <head>
+
+    <!-- Character Encoding -->
     <meta charset="UTF-8">
+
+    <!-- Responsive Website -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Choco Bliss</title>
+
+    <!-- Browser Title -->
+    <title>Chocolate Bliss</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="styles/style.css">
 
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="responsive.css">
+
 </head>
+
 <body>
-    <nav><h3 class="logo">Choco Bliss</h3>
-        <ul>
-            <li><a href="index.html">Home</a></li> 
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="Gift.html">Gift</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-<!-- <button class="button">Login</button><button class="btn">Sign Up</button> -->
-   <a href="#" class="logo">Choco Bliss</a>
-    <ul class="menu">
- 
-    <section class="icons">
-      <a href="#search">&#128269;</a> <!-- Search icon -->
-      <a href="#cart">&#128722;</a>   <!-- Cart icon -->
-      <a href="#user">&#128100;</a>   <!-- User icon -->
-      <a href="#menu">&#9776;</a>     <!-- Menu icon -->
-    </section>
-    </nav>
-<header class="header">
-     <section>    <h1>Crafted For<br> Moments Worth<br> Savoring</h1> 
-    <p><h4>Premium handcrafted chocolates made with the finest ingredients <br>and delivered fresh to your doorstep.</h4></p>
-    <p class="color:#D4AF37 ">★★★★★<br>
-Trusted by 20,000+ Chocolate Lovers</p>
-     <button class="button"><a href="shop.html"><p style="color: F5E9E2;">Shop Now</p></a></button><button class="btn"><a href="Gift.html">Explore Gift Options</a></button> 
 
-    </section>
+<!--=================================
+        HEADER START
+==================================-->
+
+<header>
+
+    <div class="container">
+
+        <!-- Navigation Start -->
+        <nav>
+
+            <!-- Website Logo -->
+            <div class="logo">
+
+                <h2>🍫 Choco Bliss</h2>
+
+            </div>
+
+            <!-- Navigation Menu -->
+            <ul class="menu">
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">Collection</a></li>
+
+                <li><a href="#">Shop</a></li>
+
+                <li><a href="#">About</a></li>
+
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+
+            <!-- Right Icons -->
+            <div class="nav-icons">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <i class="fa-regular fa-heart"></i>
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+            </div>
+
+        </nav>
+
+        <!-- Navigation End -->
+
+    </div>
+
 </header>
-<main>
-<section>
 
+<!--=================================
+        HEADER END
+==================================-->
+<!--=================================
+        HERO SECTION START
+==================================-->
+
+<section class="hero">
+
+    <!-- Decorative Background Circle -->
+    <div class="hero-bg"></div>
+
+    <div class="container">
+
+        <div class="hero-wrapper">
+
+            <!--=========================
+                LEFT CONTENT
+            ==========================-->
+
+            <div class="hero-content">
+
+                <!-- Small Badge -->
+                <span class="hero-tag">
+                    🍫 Premium Handmade Chocolate
+                </span>
+
+                <!-- Main Heading -->
+                <h1>
+
+                    Crafted For
+
+                    <span>Moments</span>
+
+                    Worth Savoring
+
+                </h1>
+
+                <!-- Description -->
+                <p>
+
+                    Discover handcrafted luxury chocolates made from the
+                    finest cocoa beans around the world.
+
+                </p>
+
+                <!-- Buttons -->
+                <div class="hero-btn">
+
+                    <a href="#" class="btn-primary">
+
+                        Shop Now
+
+                    </a>
+
+                    <a href="#" class="btn-secondary">
+
+                        Explore Collection →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!--=========================
+                RIGHT IMAGE
+            ==========================-->
+
+            <div class="hero-image">
+
+                <!-- White Circle -->
+                <div class="image-circle"></div>
+
+                <img src="images/image 13.png" alt="Chocolate">
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
-</main> 
-<footer>
-    <p>&copy; 2024 Choco Bliss. All rights reserved.</p>            
-</footer>   
+<!--=================================
+        HERO SECTION END
+==================================-->
+<!--=================================
+        FEATURED COLLECTION START
+==================================-->
 
-</body> 
-</html>        
+<section class="featured">
+
+    <div class="container">
+
+        <!--==============================
+            SECTION TITLE
+        ==============================-->
+
+        <div class="section-header">
+
+            <div>
+
+                <span class="sub-title">
+                    Premium Collection
+                </span>
+
+                <h2>
+                    Featured Chocolates
+                </h2>
+
+            </div>
+
+            <a href="#" class="view-btn">
+                View All →
+            </a>
+
+        </div>
+
+        <!--==============================
+            PRODUCT GRID
+        ==============================-->
+
+        <div class="featured-grid">
+
+            <!-- Card 1 -->
+
+            <article class="featured-card">
+
+                <div class="card-img">
+
+                    <img src="images/product-1.jpg" alt="Dark Chocolate">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Dark Chocolate</h3>
+
+                    <p>
+                        Rich cocoa with premium taste.
+                    </p>
+
+                    <div class="price-row">
+
+                        <span class="price">
+                            $18.99
+                        </span>
+
+                        <button>
+                            Buy Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- Card 2 -->
+
+            <article class="featured-card">
+
+                <div class="card-img">
+
+                    <img src="images/product-2.jpg" alt="Milk Chocolate">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Milk Chocolate</h3>
+
+                    <p>
+                        Smooth & creamy handmade chocolate.
+                    </p>
+
+                    <div class="price-row">
+
+                        <span class="price">
+                            $21.99
+                        </span>
+
+                        <button>
+                            Buy Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- Card 3 -->
+
+            <article class="featured-card">
+
+                <div class="card-img">
+
+                    <img src="images/product-3.jpg" alt="Gift Box">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Gift Box</h3>
+
+                    <p>
+                        Perfect for every celebration.
+                    </p>
+
+                    <div class="price-row">
+
+                        <span class="price">
+                            $35.99
+                        </span>
+
+                        <button>
+                            Buy Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- Card 4 -->
+
+            <article class="featured-card">
+
+                <div class="card-img">
+
+                    <img src="images/product-4.jpg" alt="Luxury Collection">
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Luxury Collection</h3>
+
+                    <p>
+                        Elegant handcrafted premium chocolates.
+                    </p>
+
+                    <div class="price-row">
+
+                        <span class="price">
+                            $49.99
+                        </span>
+
+                        <button>
+                            Buy Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=================================
+        FEATURED COLLECTION END
+==================================-->
+<!--=================================
+        BEST SELLER START
+==================================-->
+
+<section class="best-seller">
+
+    <div class="container">
+
+        <!--============================
+            SECTION HEADER
+        =============================-->
+
+        <div class="section-header">
+
+            <div>
+
+                <span class="sub-title">
+
+                    Customer Favorite
+
+                </span>
+
+                <h2>
+
+                    Best Seller
+
+                </h2>
+
+            </div>
+
+            <a href="#" class="view-btn">
+
+                View All →
+
+            </a>
+
+        </div>
+
+        <!--============================
+            PRODUCT GRID
+        =============================-->
+
+        <div class="seller-grid">
+
+            <!-- Product Card -->
+
+            <article class="seller-card">
+
+                <!-- Sale Badge -->
+
+                <span class="badge">
+
+                    Sale
+
+                </span>
+
+                <!-- Wishlist -->
+
+                <button class="wishlist">
+
+                    ❤
+
+                </button>
+
+                <!-- Product Image -->
+
+                <div class="seller-image">
+
+                    <img src="images/product-5.png" alt="Chocolate">
+
+                </div>
+
+                <!-- Product Content -->
+
+                <div class="seller-content">
+
+                    <h3>
+
+                        Belgian Truffle
+
+                    </h3>
+
+                    <div class="rating">
+
+                        ★★★★★
+
+                    </div>
+
+                    <div class="price-box">
+
+                        <span class="old-price">
+
+                            $45
+
+                        </span>
+
+                        <span class="new-price">
+
+                            $32
+
+                        </span>
+
+                    </div>
+
+                    <button class="cart-btn">
+
+                        Add To Cart
+
+                    </button>
+
+                </div>
+
+            </article>
+
+            <!-- আরও ৩টি Card একইভাবে Copy করে Image ও Text পরিবর্তন করবে -->
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=================================
+        BEST SELLER END
+==================================-->
+<!--=================================
+        ABOUT SECTION START
+==================================-->
+
+<section class="about">
+
+    <div class="container">
+
+        <div class="about-wrapper">
+
+            <!--========================
+                LEFT IMAGE
+            =========================-->
+
+            <div class="about-image">
+
+                <img src="images/about.jpg" alt="About Chocolate">
+
+            </div>
+
+            <!--========================
+                RIGHT CONTENT
+            =========================-->
+
+            <div class="about-content">
+
+                <span class="sub-title">
+
+                    About Choco Bliss
+
+                </span>
+
+                <h2>
+
+                    Handmade Chocolate Crafted
+                    With Passion & Love
+
+                </h2>
+
+                <p>
+
+                    We believe every chocolate tells a story.
+                    Our chocolatiers carefully select premium cocoa
+                    beans and create unforgettable flavors with
+                    traditional craftsmanship.
+
+                </p>
+
+                <p>
+
+                    Since 1998 we have been delivering happiness
+                    through luxury handmade chocolates.
+
+                </p>
+
+                <!-- Statistics -->
+
+                <div class="about-stats">
+
+                    <div class="stat">
+
+                        <h3>10K+</h3>
+
+                        <span>Happy Customers</span>
+
+                    </div>
+
+                    <div class="stat">
+
+                        <h3>25+</h3>
+
+                        <span>Years Experience</span>
+
+                    </div>
+
+                    <div class="stat">
+
+                        <h3>50+</h3>
+
+                        <span>Chocolate Flavors</span>
+
+                    </div>
+
+                </div>
+
+                <!-- Button -->
+
+                <a href="#" class="btn-primary">
+
+                    Learn More
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=================================
+        ABOUT SECTION END
+==================================-->
